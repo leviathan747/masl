@@ -72,11 +72,7 @@ public class TextFile extends ReferencedFile
     {
       writer.write(
             commentCharacters + " File: " + getFile().getPath() + "\n"
-                + commentCharacters + "\n"
-                + commentCharacters + " UK Crown Copyright (c) "
-                + new java.text.SimpleDateFormat("yyyy").format(new Date())
-                + ". All Rights Reserved\n"
-                + commentCharacters + "\n");
+                + commentCharacters + "\n" );
     }
     writer.write(bufferedText.toString());
   }

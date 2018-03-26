@@ -277,11 +277,7 @@ public final class CodeFile extends ReferencedFile
                  + "// File: "
                  + getFile().getName()
                  + "\n"
-                 + "//\n"
-                 + "// UK Crown Copyright (c) "
-                 + yearFormatter.format(new Date())
-                 + ". All Rights Reserved\n"
-                 + "//\n");
+                 + "//\n" );
 
     final String guardName = headerGuardConverter.convert(getFile().getPath());
 

@@ -304,7 +304,7 @@ public class BuildSet
   private final Set<FileGroup>              publishedBin      = new LinkedHashSet<FileGroup>();
   private final Set<FileGroup>              publishedLib      = new LinkedHashSet<FileGroup>();
 
-  private static final String               copyrightNotice   = "UK Crown Copyright (c)";
+  private static final String               copyrightNotice   = "";
 
   private static final Pattern              copyrightPattern  = Pattern.compile("(?<="
                                                                                 + Pattern.quote(copyrightNotice)
