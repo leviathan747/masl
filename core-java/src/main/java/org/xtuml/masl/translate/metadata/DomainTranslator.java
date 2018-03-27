@@ -140,7 +140,7 @@ public class DomainTranslator extends org.xtuml.masl.translate.DomainTranslator
     library.addDependency(Architecture.metaDataLib);
     interfaceLibrary.addDependency(Architecture.metaDataLib);
 
-    headerFile = library.createPrivateHeader("MetaData" + Mangler.mangleFile(domain));
+    headerFile = library.createPublicHeader("MetaData" + Mangler.mangleFile(domain));
 
     typeIds = new EnumerationType("TypeIds", DomainNamespace.get(domain));
     headerFile.addEnumerateDeclaration(typeIds);
