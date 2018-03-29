@@ -104,6 +104,10 @@ public class Translator
 
     cmakelists.add(new Command("include",Lists.newArrayList(Utils.getPathArg(customInclude.getAbsoluteFile()),new SingleArgument("OPTIONAL"))));
 
+    final File customIncludeGenFolder = new File("gen/custom.cmake");
+
+    cmakelists.add(new Command("include",Lists.newArrayList(Utils.getPathArg(customIncludeGenFolder.getAbsoluteFile()),new SingleArgument("OPTIONAL"))));
+
   }
 
   @Override
